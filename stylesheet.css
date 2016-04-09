@@ -1,0 +1,168 @@
+html, body { height: 100%; margin: 0;}
+
+body {
+	background-color: #fdf4d6;
+	font-family: Helvetica
+}
+
+header {
+	min-width: 1200px;
+	border-bottom: 1px solid black;
+	padding: 10px;
+	margin-bottom: 10px;
+	background-color: #00a651;
+}
+
+#leftbutton {
+	display: inline;
+}
+
+#rightbutton {
+	float: right;
+	display: inline;
+	margin-right: 10px;
+}
+
+article {
+	width: 1220px;
+}
+
+.pane {
+
+	padding: 5px;
+	margin: 5px;
+	min-height: 500px;
+}
+
+#image-edit {
+	width: 970px;
+	float: right;
+}
+
+#canvas-section {
+	float: right;
+}
+
+#canvas {
+	background-color: #000000;
+}
+
+nav {
+	float: right;
+	margin-right: 3px;
+}
+
+aside {
+	float: left;
+	width: 200px;
+	background-color: #fafafa;
+	display: inline-block;
+	border: 1px solid #095a30;
+	border-radius: 4px;
+}
+
+#labeled-items-text {
+	font-family: Helvetica;
+	font-size: 1.2em;
+	font-weight: 700;
+	text-align: center;
+	margin: none;
+}
+
+#text1 {
+	width: 145px;
+}
+
+#itemBox {
+	border: 1px solid #999999;
+	border-radius: 2px;
+	margin: -1px;
+	padding: 5px;
+	width: 180px;
+	float: left;
+}
+
+#item-text {
+	float: left;
+	margin: 0px;
+	width: 160px;
+	overflow-wrap: break-word;
+}
+
+#x {
+	font-weight: 400;
+	color: #999999;
+	float: right;
+	margin: 0px;
+}
+
+.nav-tool {
+	border: 1pt solid #095a30;
+	background-repeat: no-repeat;
+	background-size: 50px 50px;
+	background-position: center;
+	height: 50px;
+	width: 50px;
+	padding: none;
+	margin-left: none;
+	margin-right: none;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.nav-tool:active {
+	border-color: #00a651;
+}
+
+.zbut {
+	border-radius: 40px;
+}
+
+#center {
+	background-image: url('center.png');
+}
+
+#zoom-in {
+	background-image: url('zoomin.png');	
+}
+
+#zoom-out {
+	background-image: url('zoomout.png');
+}
+
+.button {
+	border-radius: 5px;
+	font-family: Helvetica;
+	color: #ffffff;
+	font-size: 1em;
+	font-weight: 400;
+	background: #00a651;
+	border: solid 1px #095a30;
+}
+
+.button:hover {
+	background-color: #00AD55;
+}
+
+.button:active {
+	background-color: #009C4C;
+}
+
+.add-button {
+	float: right;
+}
+
+.image-button {
+	padding: 5px 20px 5px 20px;
+	margin-left: 2px;
+	margin-right: 2px;
+}
+
+.input-file {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}

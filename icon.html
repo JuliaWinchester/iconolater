@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-rc.1/angular.min.js"></script>
+  <script src="paper-full.js"></script>
+  <script src="labelPath.js"></script>
+	<script src="root.js"></script>
+</head>
+<body ng-app="root" ng-controller="MyCtrl">
+  <header>
+    <div id="leftbutton">
+      <input add-image class="input-file" type="file" id="file" name="file"/>
+      <label for="file" class="image-button button">Choose a file</label>
+      <button add-image class="image-button button">Upload</button>
+    </div>
+    <div id="rightbutton">
+      <button class="image-button button">Submit</button>
+      <button class="image-button button">Cancel</button>
+    </div>
+  </header>
+  <article>
+  <section id="image-edit" class="pane">
+    <section id="canvas-section">
+      <canvas id="canvas" draw width="900" height="500"></canvas>
+    </section>
+    <nav id="nav">
+      <button zoom-image-in id="zoom-in" class="zbut nav-tool" title="Zoom In"></button>
+      <br />
+      <button zoom-image-out id="zoom-out" class="zbut nav-tool" title="Zoom Out"></button>
+      <br/>
+      <button center-image id="center" class="nav-tool" title="Center Image"></button>
+    </nav>
+  </section>
+  <aside class="pane">
+    <p id="labeled-items-text">Labeled Items</p>
+    <div id="item-input">
+      <input add-structure type="text" id="text1" name="text1" ng-model="textvar"/>
+      <button add-structure class="add-button button">Add</button>
+    </div>
+    </br>
+    <label ng-repeat="structure in structures track by $index">
+      <div id="itemBox">
+        <p id="item-text">{{structure.text}}</p>
+        <p delete-one-structure itemid="structure.id" id="x">×</p>
+        </div>
+      </div>
+    </label>
+  </aside>
+  </article>
+</body>
