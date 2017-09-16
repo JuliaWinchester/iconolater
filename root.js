@@ -109,7 +109,7 @@ app.directive('zoomImageIn', ['Image', 'Canvas', function (Image, Canvas) {
 
       element.on('click', zoomIn);
     }
-  }
+  };
 }]);
 
 app.directive('zoomImageOut', ['Image', 'Canvas', function (Image, Canvas) {
